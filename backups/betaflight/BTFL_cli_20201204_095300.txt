@@ -1,0 +1,72 @@
+# 
+
+# diff all
+
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.2.3 Sep 20 2020 / 20:44:12 (2696b7c88) MSP API: 1.43
+# config: manufacturer_id: MTKS, board_name: MATEKF722SE, version: f173f9bc, date: 2019-10-02T14:43:13Z
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name MATEKF722SE
+manufacturer_id MTKS
+mcu_id 002800353237511331313935
+signature 
+
+# resources
+resource MOTOR 1 B00
+resource MOTOR 2 B01
+resource MOTOR 3 B04
+resource MOTOR 4 B05
+
+# aux
+aux 0 0 0 1950 2100 0 0
+aux 1 1 1 900 1050 0 0
+aux 2 2 1 1425 1575 0 0
+aux 3 6 3 1425 1575 0 0
+aux 4 7 3 1950 2100 0 0
+aux 5 13 2 1950 2100 0 0
+
+# master
+set acc_calibration = 110,-11,238,1
+set mag_hardware = AUTO
+set min_throttle = 1070
+set use_unsynced_pwm = OFF
+set motor_pwm_rate = 480
+set deadband = 3
+set yaw_deadband = 3
+set gyro_1_align_pitch = 1800
+set gyro_1_align_yaw = 1800
+set gyro_2_align_yaw = 900
+
+profile 0
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 

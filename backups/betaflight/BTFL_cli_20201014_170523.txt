@@ -1,0 +1,103 @@
+# 
+
+# diff all
+
+# version
+# Betaflight / MATEKF722SE (MF7S) 3.5.6 Feb 16 2019 / 13:22:31 (c28ca22f9) MSP API: 1.40
+
+board_name MATEKF722SE
+manufacturer_id 
+mcu_id 002800353237511331313935
+signature 
+
+# reset configuration to default settings
+defaults nosave
+
+# name
+
+# resources
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+
+# beeper
+
+# beacon
+
+# map
+
+# serial
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# master
+set min_throttle = 1070
+set use_unsynced_pwm = OFF
+set motor_pwm_protocol = ONESHOT125
+set motor_pwm_rate = 480
+
+# profile
+profile 0
+
+
+# profile
+profile 1
+
+
+# profile
+profile 2
+
+
+# restore original profile selection
+profile 0
+
+# rateprofile
+rateprofile 0
+
+
+# rateprofile
+rateprofile 1
+
+
+# rateprofile
+rateprofile 2
+
+
+# rateprofile
+rateprofile 3
+
+
+# rateprofile
+rateprofile 4
+
+
+# rateprofile
+rateprofile 5
+
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
